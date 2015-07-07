@@ -1,2 +1,16 @@
 ---
 # tasks file for yauh.nodejs
+- name: Get nodejs running
+  apt: pkg={{ item }} state=latest update_cache=yes cache_valid_time=3600
+  with_items:
+     - nodejs
+     - npm
+
+- name: Clean npm cache
+  shell: npm cache clean -f
+
+- name: Install n via npm
+  shell: npm install -g n
+
+- name: Set nodejs version
+  shell: n {{nodejs_version}}
