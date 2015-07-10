@@ -1,5 +1,5 @@
 # yauh.nodejs
-Ansible role for installing Node.js
+Ansible role for setting up Node.js
 
 ## Requirements
 SSH access to the remote machine

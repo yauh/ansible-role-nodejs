@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Stephan Hochhaus
-  description: Installing Node.js
+  description: Set up Node.js
   company: freelance
   license: BSD
   min_ansible_version: 1.7
