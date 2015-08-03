@@ -5,6 +5,7 @@
   with_items:
      - nodejs
      - npm
+     - build-essential
 
 - name: Clean npm cache
   shell: npm cache clean -f
