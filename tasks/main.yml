@@ -14,4 +14,9 @@
   shell: npm install -g n
 
 - name: Set nodejs version
-  shell: n {{nodejs_version}}
+  shell: n {{ nodejs_version }}
+
+- name: Install additional npm packages
+  shell: npm install -g {{ item }}
+  with_items: npm_modules
+  when: npm_modules is defined

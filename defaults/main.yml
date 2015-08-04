@@ -1,3 +1,5 @@
 ---
 # defaults file for yauh.nodejs
 nodejs_version: v0.10.36 # nodejs version for all nodejs hosts
+npm_modules:
+  - n
